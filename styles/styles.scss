@@ -61,11 +61,6 @@ section{
     transform: translateY(0) scale(1);
 }
 
-.s4{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
 .active{
     display: block;
     animation: scaleAnim 1s ease-in-out;

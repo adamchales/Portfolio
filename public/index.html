@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Hales</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css' />
+    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="content">
+    <header class="section s1 header active" id="home">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="header-shape"></div>
+                <div class="image">
+                    <img class='me' src="https://scontent.fric1-2.fna.fbcdn.net/v/t1.6435-9/89011453_10158292115085962_7042319826412371968_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=AGyTTEhab8sAX__gijg&tn=k3ArJfuTV7xsmftb&_nc_ht=scontent.fric1-2.fna&oh=00_AT8R6-Vu0yjzxD-N3SFfiC6qFr4Ho5dvTP3UgODH8Tk5NQ&oe=62E6C48C" />
+                </div>
+            </div>
+            <div class="header-right">
+                <h1 class="name">Adam Hales</h1>
+                <p>
+                    I'm a full stack developer, focusing on using the MERN stack
+                    to deliver thoughtful and intuitive web applications.
+                </p>
+                <div class="contact-container">
+                    <a href='tel:7576349530'><i class="phone icon"></i></a>
+                    <a href='https://www.linkedin.com/in/adam-hales-422a44173/'><i class="linkedin icon"></i></a>
+                    <a href='https://github.com/adamchales'><i class="github icon"></i></a>
+                    <a href='mailto: ahalesdev@gmail.com'><i class="envelope icon"></i></a>
+                </div>
+                <div class="resumeButton">
+                <a href="https://drive.google.com/file/d/1LqDZ0DdJ1nqV3NuXmQciAF6Imretqn_1/view?usp=sharing" class="main-btn">
+                    <span class="btn-text">My resume</span>
+                    <span><i class="download icon btnIcon"></i></span>
+                </a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section s2 about" id="about">
+            <div class="aboutTitle">
+                <h1>About Me</h1>
+            </div>
+            <div class="aboutSummary">
+                <p>I've loved computers and learning for as long as I can remember. I earned my Bachelor's in Political Science from
+                Virginia Commonwealth University in 2020, and began working in operations support for a fintech company
+                shortly after. It was there that I discovered a passion for understanding and applying the technology that
+                moves the web forward. Outside of work, I love NBA basketball, music, and my dog.</p>
+            </div>
+            <h2>Skills</h2>
+            <div class="aboutSkills">
+                    <i class="js icon aboutIcon" title="Javascript" alt="Javascript"></i>
+                    <i class="react icon aboutIcon" title="React" alt="react"></i>
+                    <i class="node js icon aboutIcon" title="NodeJS" alt="node"></i>
+                    <i class="html5 icon aboutIcon" title="HTML5" alt="html5"></i>
+                    <i class="css3 alternate icon aboutIcon" title="CSS3" alt="css3"></i>
+            </div>
+            <h3>Currently listening...</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4HZhjkQkKnR9qGv9Bl2esq?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </section>
+        <section class="section s3 projects" id="projects">
+            <h1>Projects</h1>
+            <div class="ui link cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://i.ibb.co/0DFHXSL/playeditdemoreal.jpg" alt="playeditdemoreal"/>
+                    </div>
+                    <div class="content">
+                      <a class="header">Played It</a>
+                      <div class="meta">
+                        <span class="date">2022</span>
+                      </div>
+                      <div class="description">
+                        Web app for users to log and review video games.
+                        Built with NodeJS, Express, MongoDB and Bootstrap.
+                        Try it yourself with username "test" and password "fakepw"!
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a href="https://github.com/adamchales/PlayedIt">
+                        <i class="github icon"></i>
+                        Source Code
+                      </a>
+                      <a href="https://fast-journey-24885.herokuapp.com/">
+                        <i class="globe icon"></i>
+                        Live Site
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+        </section>
+    </main>
+        <div class="controlDiv">
+            <div class="control control-1 active-btn" data-id="home" title="Home">
+                <i class="home icon"></i>
+            </div>
+            <div class="control control-2">
+                <i class="address card outline icon" data-id="about" title="About Me"></i>
+            </div>
+            <div class="control control-3">
+                <i class="folder open outline icon" data-id="projects" title="Projects"></i>
+            </div>
+
+        </div>
+        <script src="./app.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyB3fcsfE7oZTtHeGrf3M3UDmvFklEG5-AE",
+              authDomain: "portfolio-76ab4.firebaseapp.com",
+              projectId: "portfolio-76ab4",
+              storageBucket: "portfolio-76ab4.appspot.com",
+              messagingSenderId: "1092521826264",
+              appId: "1:1092521826264:web:92b80288a007b26cf3c4ad",
+              measurementId: "G-VRQJELQXVD"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+</body>
+</html>

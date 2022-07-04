@@ -1,0 +1,20 @@
+@media screen and (max-width: 690px){
+    .header-shape{
+        display:none;
+    }
+    .me{
+        display:none;
+    }
+    .controlDiv{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--color-grey)
+    }
+    .control{
+        margin: 1rem .3rem;
+    }
+}

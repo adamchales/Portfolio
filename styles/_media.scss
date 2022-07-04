@@ -21,11 +21,21 @@
     .control{
         margin: 1rem .3rem;
     }
+    .aboutTitle{
+        h1{
+            display: flex;
+            font-size: 1.25rem;
+            width: 150px;
+            align-items: center;
+        }
+    }
     .aboutSummary{
         display: flex;
-        height: 60%;
-        width: fit-content;
-
+        max-height: 50%;
+        width: 250px;
+        font-size: 1rem;
+        align-items: center;
+       transform: translateX(-50%);
     }
     iframe{
         display: none;

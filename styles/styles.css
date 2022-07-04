@@ -269,6 +269,22 @@ section {
   .control {
     margin: 1rem 0.3rem;
   }
+
+  .aboutSummary {
+    display: flex;
+    height: 60%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  h3 {
+    display: none;
+  }
 }
 @media screen and (min-width: 1250px) {
   .header-shape {
